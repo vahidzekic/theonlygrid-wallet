@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uputstvo · TOG Wallet</title>
+<meta name="description" content="Kako da instalirate TOG Wallet, prijavite se, primate i šaljete $TOG i uzmete test-TOG.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#2c6e5f">
+<link rel="alternate" hreflang="en" href="en/guide.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#sadrzaj">Preskoči na sadržaj</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#2c6e5f"/><rect x="7" y="10" width="18" height="13" rx="2.5" fill="none" stroke="#fff" stroke-width="2.2"/><path d="M9 10l9-3.5 2 3.5" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/><rect x="18" y="14.5" width="7" height="4.5" rx="1.2" fill="#fff"/><circle cx="20.6" cy="16.75" r="1" fill="#2c6e5f"/></svg><span>TOG Wallet</span></a>
+    <nav class="nav" aria-label="Glavni meni">
+      <a href="index.html">Početna</a> <a href="uputstvo.html" aria-current="page">Uputstvo</a> <a href="kako-radi.html">Kako radi</a> <a href="privatnost.html">Privatnost</a> <a class="lang" href="en/guide.html" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
+</header>
+<main id="sadrzaj">
+<div class="page">
+  <div class="wrap with-toc">
+    <nav class="toc" aria-label="Sadržaj">
+      <strong>Sadržaj</strong>
+      <ol>
+        <li><a href="#instalacija">Instalacija</a></li>
+        <li><a href="#nalog">Prijava i nalog</a></li>
+        <li><a href="#fraza">Fraza od 24 reči</a></li>
+        <li><a href="#primanje">Primanje</a></li>
+        <li><a href="#slanje">Slanje</a></li>
+        <li><a href="#test-tog">Test-TOG</a></li>
+        <li><a href="#zakljucavanje">Zaključavanje</a></li>
+        <li><a href="#cesta-pitanja">Česta pitanja</a></li>
+      </ol>
+    </nav>
+    <article>
+      <h1>Uputstvo</h1>
+      <p class="muted">Za TOG Wallet na testnoj mreži The Only Grid.</p>
+
+      <h2 id="instalacija">Instalacija</h2>
+      <h3>Windows</h3>
+      <p>Preuzmite <code>.zip</code> sa <a href="https://github.com/vahidzekic/theonlygrid-wallet/releases/latest">stranice izdanja</a>, raspakujte ga i pokrenite <code>tog_wallet.exe</code>. Aplikacija još nije potpisana, pa Windows može da prikaže „Windows protected your PC“: kliknite <em>More info</em>, pa <em>Run anyway</em>.</p>
+      <h3>macOS</h3>
+      <p>Preuzmite <code>.zip</code> za macOS, raspakujte ga i prevucite <em>TOG Wallet</em> u <em>Applications</em>. Dok aplikacija nije notarizovana, prvi put je otvorite desnim klikom → <em>Open</em>.</p>
+      <h3>Linux</h3>
+      <p>Preuzmite <code>.tar.gz</code>, raspakujte ga i pokrenite <code>tog_wallet</code>. Za čuvanje ključeva potreban je Secret Service (GNOME Keyring ili KWallet).</p>
+      <h3>iPhone i Android</h3>
+      <p>Mobilne verzije prvo idu testerima (TestFlight i interno testiranje na Google Play-u). Ovde ćemo objaviti kada budu javno dostupne.</p>
+
+      <h2 id="nalog">Prijava i nalog</h2>
+      <p>TOG Wallet koristi TOG nalog, isti kao TOG Drive. Prijavljujete se korisničkim imenom i lozinkom. Lozinka nikada ne napušta uređaj u čitljivom obliku: prijava radi po protokolu OPAQUE.</p>
+      <p>Ako nemate nalog, izaberite <em>Napravi nalog</em>. Dok je mreža zatvorena za otvorenu registraciju, potreban je pozivni kod ili provera u pregledaču. Aplikacija tada napravi ključeve i frazu od 24 reči.</p>
+      <p>Vaša adresa na mreži izvodi se iz glavnog ključa naloga, pa je ista na svakom uređaju i u TOG Console-u.</p>
+
+      <h2 id="fraza">Fraza od 24 reči</h2>
+      <p>Fraza je rezervna kopija vaših ključeva. Zapišite je na papir i čuvajte na sigurnom; nikome je ne dajte i ne kucajte je ni na jednu veb stranicu. TOG je nikada neće tražiti osim na ekranu za oporavak u aplikaciji.</p>
+      <p>Fraza zajedno sa servisom TOG naloga vraća nalog, novčanik i Drive. Bez lozinke i bez fraze nalog ne može da se vrati, ni od nas.</p>
+
+      <h2 id="primanje">Primanje</h2>
+      <p>Na ekranu <em>Primi</em> je vaša adresa (<code>0x</code> i 40 heksadecimalnih znakova) i QR kod. Pošiljaocu dajte adresu ili neka skenira kod. Uplata se vidi čim uđe u blok, obično za nekoliko sekundi.</p>
+
+      <h2 id="slanje">Slanje</h2>
+      <ol>
+        <li>Na ekranu <em>Pošalji</em> unesite ili skenirajte adresu primaoca i iznos.</li>
+        <li>Proverite ceo ekran potvrde: adresu primaoca, iznos, šta vam ostaje i mrežu.</li>
+        <li>Potvrdite otiskom prsta, licem ili lozinkom sistema.</li>
+      </ol>
+      <p>Pravila mreže: pošiljalac mora da ima bar 0,1 TOG pre slanja, a prva uplata na adresu koja još ne postoji mora biti bar 0,1 TOG. Transakcija na Hub-u za sada nema naknadu.</p>
+      <p>Uvek proverite celu adresu, ne samo početak i kraj: prevaranti prave adrese koje se razlikuju samo u sredini.</p>
+
+      <h2 id="test-tog">Test-TOG</h2>
+      <p>Na testnoj mreži dugme <em>Uzmi test-TOG</em> otvara kratku proveru u pregledaču, a zatim faucet šalje test-TOG na vašu adresu. Jedna adresa i jedna IP adresa mogu da traže jednom u 24 sata. Test-TOG nema novčanu vrednost.</p>
+
+      <h2 id="zakljucavanje">Zaključavanje</h2>
+      <p>Aplikacija traži otključavanje uređaja pre svakog slanja i pre prikaza fraze. U podešavanjima možete uključiti i zaključavanje pri pokretanju.</p>
+
+      <h2 id="cesta-pitanja">Česta pitanja</h2>
+      <h3>Da li je ovo isti nalog kao TOG Drive?</h3>
+      <p>Da. Jedan TOG nalog, jedna fraza, jedna adresa.</p>
+      <h3>Može li neko iz TOG-a da pomeri moj TOG?</h3>
+      <p>Ne. Ključ za potpisivanje postoji samo na vašim uređajima. Servis čuva samo zaključanu kopiju glavnog ključa, koju ne može da otvori.</p>
+      <h3>Zaboravio sam lozinku.</h3>
+      <p>Izaberite <em>Oporavak frazom</em> i unesite 24 reči, pa postavite novu lozinku.</p>
+      <h3>Izgubio sam telefon.</h3>
+      <p>Prijavite se na drugom uređaju i opozovite izgubljeni u spisku uređaja. Vaš TOG je na mreži, ne na telefonu.</p>
+      <h3>Transakcija stoji kao „nepotvrđena“.</h3>
+      <p>Pokušajte ponovo iz istorije. Ponovno slanje koristi isti redni broj transakcije, pa ne može da plati dvaput.</p>
+      <h3>Gde da prijavim grešku?</h3>
+      <p>Na <a href="https://github.com/vahidzekic/theonlygrid-wallet/issues">GitHub-u</a> ili na <a href="mailto:vahidzekic@gmail.com">vahidzekic@gmail.com</a>.</p>
+    </article>
+  </div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>TOG Wallet je test verzija na testnoj mreži The Only Grid. Test-TOG nema novčanu vrednost.</span>
+    <nav aria-label="Footer"><a href="privatnost.html">Politika privatnosti</a> <a href="privatnost.html#brisanje-naloga">Brisanje naloga</a> <a href="uputstvo.html#cesta-pitanja">Česta pitanja</a></nav>
+  </div>
+</footer>
+</body>
+</html>

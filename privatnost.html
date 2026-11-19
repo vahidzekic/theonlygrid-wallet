@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politika privatnosti · TOG Wallet</title>
+<meta name="description" content="Politika privatnosti aplikacije TOG Wallet i brisanje naloga.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#2c6e5f">
+<link rel="alternate" hreflang="en" href="en/privacy.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#sadrzaj">Preskoči na sadržaj</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#2c6e5f"/><rect x="7" y="10" width="18" height="13" rx="2.5" fill="none" stroke="#fff" stroke-width="2.2"/><path d="M9 10l9-3.5 2 3.5" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/><rect x="18" y="14.5" width="7" height="4.5" rx="1.2" fill="#fff"/><circle cx="20.6" cy="16.75" r="1" fill="#2c6e5f"/></svg><span>TOG Wallet</span></a>
+    <nav class="nav" aria-label="Glavni meni">
+      <a href="index.html">Početna</a> <a href="uputstvo.html">Uputstvo</a> <a href="kako-radi.html">Kako radi</a> <a href="privatnost.html" aria-current="page">Privatnost</a> <a class="lang" href="en/privacy.html" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
+</header>
+<main id="sadrzaj">
+<div class="page">
+  <div class="wrap with-toc">
+    <nav class="toc" aria-label="Sadržaj">
+      <strong>Sadržaj</strong>
+      <ol>
+        <li><a href="#rukovalac">Ko je rukovalac</a></li>
+        <li><a href="#ukratko">Ukratko</a></li>
+        <li><a href="#podaci">Koje podatke obrađujemo</a></li>
+        <li><a href="#javno">Šta je javno na mreži</a></li>
+        <li><a href="#ne-prikupljamo">Šta ne prikupljamo</a></li>
+        <li><a href="#svrhe">Svrhe i pravni osnov</a></li>
+        <li><a href="#primaoci">Primaoci</a></li>
+        <li><a href="#cuvanje">Koliko dugo čuvamo</a></li>
+        <li><a href="#brisanje-naloga">Brisanje naloga</a></li>
+        <li><a href="#prava">Vaša prava</a></li>
+        <li><a href="#deca">Deca</a></li>
+        <li><a href="#izmene">Izmene</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ol>
+    </nav>
+    <article>
+      <h1>Politika privatnosti</h1>
+      <p class="muted">Važi za aplikaciju TOG Wallet (Windows, macOS, Linux, iOS, Android). Poslednja izmena: 19. novembar 2026.</p>
+
+      <h2 id="rukovalac">1. Ko je rukovalac podataka</h2>
+      <p>Rukovalac podataka o ličnosti je Vahid Zekić, Zmaj Jovina 38, 36300 Novi Pazar, Srbija, <a href="mailto:vahidzekic@gmail.com">vahidzekic@gmail.com</a> („mi“).</p>
+
+      <h2 id="ukratko">2. Ukratko</h2>
+      <ul>
+        <li>Ključeve za potpisivanje imate samo vi. Ne možemo da pomerimo vaš TOG.</li>
+        <li>Nalog je TOG nalog, isti kao za TOG Drive; podaci o nalogu obrađuju se kako piše u <a href="https://vahidzekic.github.io/theonlygrid-drive/privatnost.html">politici privatnosti TOG Drive-a</a>, odeljak 3.1.</li>
+        <li>Transakcije na mreži The Only Grid su javne i trajne, kao na svakom javnom blokčejnu.</li>
+        <li>Nema reklama, praćenja, analitike ni profilisanja.</li>
+      </ul>
+
+      <h2 id="podaci">3. Koje podatke obrađujemo</h2>
+      <h3>3.1 TOG nalog</h3>
+      <p>Korisničko ime, zapis za prijavu (OPAQUE, iz kog se lozinka ne može saznati), zaključani ključevi, javni ključevi i spisak uređaja. Ovo su isti podaci kao za TOG Drive i čuva ih servis TOG naloga.</p>
+      <h3>3.2 Zahtevi ka mreži</h3>
+      <p>Kada aplikacija čita stanje i istoriju ili šalje transakciju, javni RPC gateway (<code>rpc.theonlygrid.com</code>) vidi vašu IP adresu, vreme, adresu koju čitate i transakciju koju šaljete. U zapisima servera ostaju IP adresa, vreme, tip zahteva i ishod.</p>
+      <h3>3.3 Faucet (testna mreža)</h3>
+      <p>Kada tražite test-TOG, faucet obrađuje vašu adresu i IP adresu (radi ograničenja jednom u 24 sata), a proveru pri tome radi Cloudflare Turnstile u vašem pregledaču.</p>
+      <h3>3.4 Podaci na uređaju</h3>
+      <p>Aplikacija čuva ključeve uređaja i zaključani glavni ključ u sistemskom skladištu ključeva, token sesije, podešavanja i spisak adresa koje pratite. Ti podaci ne napuštaju uređaj.</p>
+      <h3>3.5 Podrška</h3>
+      <p>Ako nam pišete, obrađujemo vašu e-adresu i poruku da bismo odgovorili.</p>
+
+      <h2 id="javno">4. Šta je javno na mreži</h2>
+      <p>Svaka transakcija na mreži The Only Grid je javna: adresa pošiljaoca, adresa primaoca, iznos i vreme. Svako ih može videti u pretraživaču mreže, i ne mogu se obrisati. Adresa sama po sebi ne sadrži vaše ime, ali ako je povežete sa sobom (na primer objavite je), svako može videti njene transakcije.</p>
+
+      <h2 id="ne-prikupljamo">5. Šta ne prikupljamo</h2>
+      <ul>
+        <li>lozinku, frazu od 24 reči i ključeve za potpisivanje;</li>
+        <li>e-mail, broj telefona, ime, adresu stanovanja ili podatke o plaćanju;</li>
+        <li>lokaciju, kontakte, fotografije; kamera se koristi samo za skeniranje QR koda i slika ne napušta uređaj;</li>
+        <li>reklamne identifikatore i podatke za praćenje.</li>
+      </ul>
+
+      <h2 id="svrhe">6. Svrhe i pravni osnov</h2>
+      <ul>
+        <li>Pružanje servisa (nalog, čitanje stanja, slanje transakcija): izvršenje ugovora (čl. 6 st. 1 tač. b GDPR; čl. 12 st. 1 tač. 2 ZZPL).</li>
+        <li>Bezbednost i sprečavanje zloupotrebe (zapisi, ograničenja faucet-a): legitimni interes (čl. 6 st. 1 tač. f GDPR; čl. 12 st. 1 tač. 6 ZZPL).</li>
+        <li>Zakonske obaveze: pravna obaveza (čl. 6 st. 1 tač. c GDPR).</li>
+      </ul>
+
+      <h2 id="primaoci">7. Primaoci</h2>
+      <ul>
+        <li>Contabo GmbH, Nemačka, pružalac servera za gateway, faucet i servis naloga, kao obrađivač.</li>
+        <li>Cloudflare, Inc., za proveru pri faucet-u i registraciji.</li>
+        <li>Operateri čvorova mreže The Only Grid, koji primaju i čuvaju javne transakcije.</li>
+        <li>Apple i Google, kada aplikaciju preuzimate iz njihovih prodavnica.</li>
+        <li>Državni organi, samo kada to zakon nalaže.</li>
+      </ul>
+
+      <h2 id="cuvanje">8. Koliko dugo čuvamo</h2>
+      <ul>
+        <li>TOG nalog: dok nalog postoji.</li>
+        <li>Zapisi servera sa IP adresama: 14 dana, osim kod bezbednosnog incidenta ili zakonske obaveze.</li>
+        <li>Evidencija faucet-a (adresa, IP): koliko traje ograničenje, najduže 30 dana.</li>
+        <li>Transakcije na mreži: trajno, jer su deo javnog lanca.</li>
+      </ul>
+
+      <h2 id="brisanje-naloga">9. Brisanje naloga</h2>
+      <p>TOG nalog možete obrisati u svakom trenutku, besplatno: u aplikaciji <em>Podešavanja → Obriši nalog</em>, ili zahtevom na <a href="mailto:vahidzekic@gmail.com">vahidzekic@gmail.com</a> sa naslovom „Brisanje naloga“ i korisničkim imenom.</p>
+      <ul>
+        <li><strong>Pre brisanja prebacite svoj TOG na drugu adresu.</strong> Posle brisanja ključ za adresu više ne postoji, pa TOG koji na njoj ostane niko ne može da pomeri.</li>
+        <li>Brisanje TOG naloga briše i vaš TOG Drive, jer je to isti nalog.</li>
+        <li>Odmah se brišu korisničko ime, zapis za prijavu, zaključani ključevi, uređaji i sesije; zapisi servera u roku od 30 dana.</li>
+        <li>Transakcije na mreži se ne mogu obrisati (odeljak 4).</li>
+      </ul>
+
+      <h2 id="prava">10. Vaša prava</h2>
+      <p>Prema GDPR-u i Zakonu o zaštiti podataka o ličnosti imate pravo na pristup, ispravku, brisanje, ograničenje obrade, prenosivost i prigovor, kao i pravo na pritužbu Povereniku za informacije od javnog značaja i zaštitu podataka o ličnosti (<a href="https://www.poverenik.rs">www.poverenik.rs</a>) ili nadzornom organu u EU. Zahteve šaljite na <a href="mailto:vahidzekic@gmail.com">vahidzekic@gmail.com</a>; odgovaramo najkasnije za 30 dana.</p>
+
+      <h2 id="deca">11. Deca</h2>
+      <p>TOG Wallet nije namenjen deci mlađoj od 16 godina.</p>
+
+      <h2 id="izmene">12. Izmene</h2>
+      <p>Nova verzija politike biće objavljena na ovoj stranici sa novim datumom; o bitnim izmenama obavestićemo vas u aplikaciji.</p>
+
+      <h2 id="kontakt">13. Kontakt</h2>
+      <p>Vahid Zekić, Zmaj Jovina 38, 36300 Novi Pazar, Srbija, <a href="mailto:vahidzekic@gmail.com">vahidzekic@gmail.com</a></p>
+    </article>
+  </div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>TOG Wallet je test verzija na testnoj mreži The Only Grid. Test-TOG nema novčanu vrednost.</span>
+    <nav aria-label="Footer"><a href="privatnost.html">Politika privatnosti</a> <a href="privatnost.html#brisanje-naloga">Brisanje naloga</a> <a href="uputstvo.html#cesta-pitanja">Česta pitanja</a></nav>
+  </div>
+</footer>
+</body>
+</html>
