@@ -1,52 +1,69 @@
+/* Inter, latin-ext (variable; SIL Open Font License 1.1) */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(fonts/inter-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* Inter, latin (variable; SIL Open Font License 1.1) */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(fonts/inter-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* JetBrains Mono, latin-ext (variable; SIL Open Font License 1.1) */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(fonts/jetbrains-mono-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* JetBrains Mono, latin (variable; SIL Open Font License 1.1) */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(fonts/jetbrains-mono-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /* TOG Wallet: one stylesheet for every page. Light and dark follow the system. */
 :root {
-  color-scheme: light dark;
-  --bg: #f7f9fc;
-  --surface: #ffffff;
-  --surface-2: #eef2f8;
-  --text: #17202b;
-  --muted: #4f5b6b;
-  --border: #d8dfe9;
-  --accent: #2c6e5f;
-  --accent-strong: #1f5246;
-  --accent-soft: #e0f0eb;
+  color-scheme: dark;
+  --bg: #0d0f13;
+  --surface: #171a21;
+  --surface-2: #13161c;
+  --text: #eef0f3;
+  --muted: #a3a8b3;
+  --dim: #6d7380;
+  --border: #262a33;
+  --accent: #3987e5;
+  --accent-strong: #5aa2ff;
+  --accent-soft: rgba(57, 135, 229, .16);
   --on-accent: #ffffff;
-  --warn-bg: #fff6e0;
-  --warn-border: #e8c76a;
-  --warn-text: #5a4300;
-  --ph-bg: #ffe9f0;
-  --ph-text: #8a1240;
-  --code-bg: #eef1f5;
-  --diagram-stroke: #2c6e5f;
-  --diagram-fill: #e0f0eb;
-  --diagram-text: #17202b;
-  --radius: 14px;
-  --maxw: 1080px;
-  --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
-  --mono: ui-monospace, "SFMono-Regular", "Cascadia Mono", Menlo, Consolas, monospace;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0f141b;
-    --surface: #161d27;
-    --surface-2: #1c2531;
-    --text: #e6ebf2;
-    --muted: #a5b0bf;
-    --border: #2b3645;
-    --accent: #7fcab5;
-    --accent-strong: #a9dccd;
-    --accent-soft: #173029;
-    --on-accent: #0a1a16;
-    --warn-bg: #2b2412;
-    --warn-border: #7a6224;
-    --warn-text: #f1dca0;
-    --ph-bg: #3a1726;
-    --ph-text: #ffb3cd;
-    --code-bg: #1f2833;
-    --diagram-stroke: #7fcab5;
-    --diagram-fill: #173029;
-    --diagram-text: #e6ebf2;
-  }
+  --teal: #2cc3b0;
+  --amber: #f0b44c;
+  --warn-bg: rgba(240, 180, 76, .10);
+  --warn-border: rgba(240, 180, 76, .45);
+  --warn-text: #f3d08f;
+  --ph-bg: #3a1726;
+  --ph-text: #ffb3cd;
+  --code-bg: #1b1f27;
+  --diagram-stroke: #3987e5;
+  --diagram-fill: #13161c;
+  --diagram-text: #eef0f3;
+  --radius: 16px;
+  --maxw: 1180px;
+  --font: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -210,6 +227,26 @@ figcaption { font-size: .9rem; color: var(--muted); margin-top: 8px; }
 }
 .diagram svg.ec { max-width: 460px; margin: 0 auto; }
 @media (max-width: 480px) { pre { font-size: 13px; } }
+
+/* Ecosystem details, as on theonlygrid.com. */
+body { -webkit-font-smoothing: antialiased; }
+.site-header { background: rgba(13, 15, 19, .72); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, .05); }
+.brand { letter-spacing: -.01em; }
+h1, h2, h3 { letter-spacing: -.02em; }
+h1 em, h2 em { font-style: normal; background: linear-gradient(90deg, var(--accent2, #5aa2ff), var(--teal));
+  -webkit-background-clip: text; background-clip: text; color: transparent; }
+.badge { background: rgba(44, 195, 176, .12); color: var(--teal); border: 1px solid rgba(44, 195, 176, .35); }
+.steps > li::before { background: var(--accent-soft); color: var(--accent-strong); }
+.mock { box-shadow: 0 20px 60px rgba(0, 0, 0, .45); }
+.mock .row svg, .mock .lock svg { color: var(--teal); }
+.card > svg { color: var(--teal); }
+.nav .eco { color: var(--muted); }
+.nav .eco:hover { color: var(--accent-strong); }
+.langsel summary { border-color: var(--border); }
+.langsel summary:hover, .langsel[open] summary { border-color: var(--accent); }
+.langsel ul { box-shadow: 0 12px 32px rgba(0, 0, 0, .5); }
+.flag { box-shadow: 0 0 0 1px rgba(255, 255, 255, .12); }
 
 /* Language menu: a dropdown with a flag and the language's short name. */
 .langsel { position: relative; background: none; border: 0; padding: 0; margin: 0; }
