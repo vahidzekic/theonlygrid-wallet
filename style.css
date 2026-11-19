@@ -210,3 +210,22 @@ figcaption { font-size: .9rem; color: var(--muted); margin-top: 8px; }
 }
 .diagram svg.ec { max-width: 460px; margin: 0 auto; }
 @media (max-width: 480px) { pre { font-size: 13px; } }
+
+/* Language menu: a dropdown with a flag and the language's short name. */
+.langsel { position: relative; background: none; border: 0; padding: 0; margin: 0; }
+.langsel[open] summary { margin-bottom: 0; }
+.langsel summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;
+  border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px; color: var(--text); font-size: .9rem; }
+.langsel summary::-webkit-details-marker { display: none; }
+.langsel summary::after { content: ""; width: 6px; height: 6px; border-right: 1.5px solid var(--muted);
+  border-bottom: 1.5px solid var(--muted); transform: rotate(45deg); margin: -3px 0 0 2px; }
+.langsel[open] summary::after { transform: rotate(-135deg); margin-top: 3px; }
+.langsel ul { position: absolute; right: 0; top: calc(100% + 6px); z-index: 20; margin: 0; padding: 6px; list-style: none;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px; min-width: 170px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.12); }
+.langsel li a { display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: 8px; color: var(--text); }
+.langsel li a:hover { background: var(--surface-2); }
+.langsel li a[aria-current] { background: var(--accent-soft); }
+.langsel li a span { color: var(--muted); font-weight: 400; }
+.flag { width: 21px; height: 14px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0,0,0,.15); flex: none; }
+@media (max-width: 720px) { .langsel ul { right: auto; left: 0; } }
